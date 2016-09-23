@@ -1,0 +1,92 @@
+#bsgLogo {
+	width: 400px;
+	height: 310px;
+	left: 55px;
+	top: 35px;
+}
+#gameCapture1 {
+	width: 667px;
+	height: 500px;
+	left: 870px;
+	top: 35px;
+}
+
+#gameCapture2 {
+	width: 667px;
+	height: 500px;
+	left: 870px;
+	top: 555px;
+}
+
+#webcam1 {
+	width: 474px;
+	height: 267px;
+	left: 15px;
+	top: 788px;
+}
+
+#runInformationWrapper {
+	width: 485px;
+	height: 179px;
+	left: 15px;
+	top: 353px;
+	display: flex;
+	align-items: center;
+}
+
+#runInformationFields {
+	box-sizing: border-box;
+	padding-left: 10px;
+	line-height: 180%;
+	letter-spacing: -1.5px;
+}
+
+#runInformationGameName {
+	font-size: 26px;
+}
+
+#runInformationGameCategory {
+	padding-top: 7px;
+	font-size: 20px;
+}
+
+#runInformationGameSystem {
+	padding-top: 7px;
+	font-size: 20px;
+}
+
+.playerContainer {
+	width: 484px;
+	height: 99px;
+	left: 15px;
+	top: 542px;
+}
+
+.runnerLogo {
+	width: 71px;
+	margin-right: 12px;
+}
+
+.runnerInfo {
+	font-size: 26px;
+	line-height: 99px;
+	box-sizing: border-box;
+	padding-left: 10px;
+}
+
+#timerContainer {
+	width: 484px;
+	height: 127px;
+	left: 15px;
+	top: 651px;
+}
+
+#timer {
+	padding-top: 5px;
+	font-size: 61px;
+}
+
+#runInformationGameEstimate {
+	top: -15px;
+	font-size: 30px;
+}

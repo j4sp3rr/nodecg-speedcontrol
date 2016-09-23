@@ -1,0 +1,145 @@
+#bsgLogo {
+	width: 348px;
+	height: 270px;
+	left: 1555px;
+	top: 795px;
+}
+
+#gameCapture1 {
+	width: 930px;
+	height: 523px;
+	left: 15px;
+	top: 89px;
+}
+	
+#gameCapture2 {
+	width: 930px;
+	height: 523px;
+	left: 965px;
+	top: 89px;
+}
+
+#webcam1 {
+	width: 474px;
+	height: 267px;
+	left: 15px;
+	top: 788px;
+}
+
+#runInformationWrapper {
+	width: 693px;
+	height: 145px;
+	left: 615px;
+	top: 788px;
+	display: flex;
+	align-items: center;
+}
+
+#runInformationFields {
+	box-sizing: border-box;
+	padding-left: 15px;
+	line-height: 180%;
+	letter-spacing: -1.5px;
+	width: 100%;
+}
+
+#runInformationGameName {
+	font-size: 29px;
+}
+
+#runInformationGameCategory {
+	padding-top: 15px;
+	font-size: 23px;
+	float: left;
+}
+
+#runInformationGameSystem {
+	padding-top: 15px;
+	font-size: 23px;
+	float: right;
+	padding-right: 15px;
+}
+
+#player1Container {
+	width: 902px;
+	height: 63px;
+	left: 15px;
+	top: 629px;
+}
+
+#player2Container {
+	width: 978px;
+	height: 63px;
+	left: 927px;
+	top: 629px;
+}
+
+#player2Container .runnerLogo {
+	width: 63px;
+	margin-right: 10px;
+}
+
+#player1Container .runnerInfo {
+	font-size: 30px;
+	line-height: 63px;
+	box-sizing: border-box;
+	padding-right: 15px;
+	text-align: right;
+}
+
+#player2Container .runnerInfo {
+	font-size: 30px;
+	line-height: 63px;
+	box-sizing: border-box;
+	padding-left: 15px;
+}
+
+#timerContainer {
+	width: 693px;
+	height: 127px;
+	left: 615px;
+	top: 938px;
+}
+
+#timer {
+	padding-top: 5px;
+	font-size: 61px;
+}
+
+#runInformationGameEstimate {
+	top: -15px;
+	font-size: 30px;
+}
+
+.runnerTimerFinishedContainer {
+	height: 63px;
+}
+
+#runner1TimerFinishedContainer {
+	padding-left: 15px;
+	left: 15px;
+	top: 603px;
+}
+
+#runner2TimerFinishedContainer {
+	left: 1657px;
+	top: 603px;
+}
+
+.runnerTimerFinished {
+	
+	line-height: 63px;
+	font-size: 24px;
+}
+
+.finishedLogo {
+	width: 50px;
+}
+
+#runner1TimerFinishedContainer .runnerTimerFinished {
+	margin-left: 15px;
+}
+
+#runner2TimerFinishedContainer .runnerTimerFinished {
+	margin-right: 15px;
+}

@@ -6,11 +6,13 @@
 
 // Transition to change html from current to nextHtml, with scaling..
 function animation_setGameFieldAlternate($selector, nextHtml) {
-    applyWillChange($selector);
-    var tm = new TimelineMax({paused: true});
-    tm.to($selector, 0.5, {opacity: '0', transform: "scale(0)",  ease: Quad.easeOut },'0.2');
-    tm.to($selector, 0.5, {opacity: '1', transform: "scale(1)", onStart:updateSelectorText, onStartParams:[$selector, nextHtml], onComplete:removeWillChange, onCompleteParams:[$selector], ease: Quad.easeOut },'0.7');
-    tm.play();
+	applyWillChange($selector);
+	$($selector).fadeOut(500, function() {
+		updateSelectorText($selector, nextHtml);
+		$($selector).fadeIn(500, function() {
+			removeWillChange($selector);
+		});
+	});
 }
 
 // Transition to change html from current to nextHtml, with translation..

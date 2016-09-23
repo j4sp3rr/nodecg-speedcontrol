@@ -10,7 +10,7 @@ var async = require('async');
 
 var nodeCgExport;
 var accessToken;
-var ffzWSAddress = 'wss://catbag.frankerfacez.com/';
+var ffzWSAddress = 'wss://tuturu.frankerfacez.com/';
 var messageNumber;
 var ffzWS;
 var ffzWSConnected = false;

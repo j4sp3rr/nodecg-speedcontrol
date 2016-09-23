@@ -1,116 +1,143 @@
-@font-face {
-    font-family: 'FFFForward';
-    src: url('../images/FFFFORWA.TTF') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+#webcam {
+	width: 1469px;
+	height: 827px;
+	left: 231px;
+	top:12px;
 }
-
-body {
-    overflow: hidden;
-    margin: 0px;
-    padding: 0px;
-}
-
-#window-container {
-    background-image: url('../images/Intermission.png');
-    width: 1280px;
-    height: 720px;
-    overflow: hidden;
-    margin: 0px;
-    padding: 0px;
-    background-color: #000000;
+	
+#justMissed {
+	position: fixed;
+	text-align: left;
+	left: 785px;
+	top: 855px;
+	font-size: 18px;
 }
 
 #comingUp {
-    font-family: FFFForward;
-    color: #856899;
-    font-size: 20px;
-    text-align: right;
-    padding-bottom: 15px;
-    width: 400px;
+	position: fixed;
+	text-align: left;
+	left: 1024px;
+	top: 855px;
+	font-size: 18px;
 }
 
-#justMissed {
-    font-family: FFFForward;
-    color: #856899;
-    font-size: 20px;
-    padding-bottom: 15px;
-    width: 400px;
+.runInformationFields {
+	overflow: hidden;
+	box-sizing: border-box;
+	padding-left: 7px;
+	padding-top: 2px;
+	line-height: 120%;
+	width: 100%;
 }
 
-#comingUpRun {
-    position: absolute;
-    font-family: FFFForward;
-    font-size: 14px;
-    display: flex;
-    flex-flow: row wrap;
-    width: 400px;
+.runInformationWrapper {
+	width: 700px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	position: fixed;
+	background-color: rgba(69,69,69,0.7);
 }
 
-#justMissedRun {
-    position: absolute;
-    font-family: FFFForward;
-    display: flex;
-    flex-flow: row wrap;
-    font-size: 14px;
-    width: 400px;
-}
-
-
-#informationMarquee {
-    font-family: FFFForward;
-    color: #856899;
-    position: absolute;
-    top: 500px;
-    left: 0px;
-    height: 0px;
-    width: 1280px;
-    overflow:hidden;
-    white-space: nowrap;
-    background-color: rgba(0,0,0,0.5);
-    opacity: 0;
-    font-size: 15px;
-    text-align: center;
-}
-
-#comingUpGame {
-    padding: 2px;
-    color: #856899;
-    width: 400px;
-    background: #362b41;
-}
-
-#comingUpSystem {
-    padding-right: 5px;
-    color: #856899;
-    width: 100px;
-    text-align: right;
-    background: #271e2f;
-}
-#comingUpCathegory {
-    padding: 2px;
-    color: #856899;
-    width: 220px;
-    background: #271e2f;
+#justMissedRunContainer .runInformationWrapper {
+	left: 222px;
+	top: 890px;
 }
 
 #justMissedGame {
-    padding: 2px;
-    color: #856899;
-    width: 400px;
-    background: #362b41;
+	font-size: 16px;
+	letter-spacing: 0px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#justMissedCathegory {
+	font-size: 14px;
+	float: right;
+	padding-right: 10px;
 }
 
 #justMissedSystem {
-    padding-right: 5px;
-    color: #856899;
-    width: 100px;
-    text-align: right;
-    background: #271e2f;
+	font-size: 16px;
+	float: left;
+	color: #bfbfbf;
 }
-#justMissedCathegory {
-    padding: 2px;
-    color: #856899;
-    width: 220px;
-    background: #271e2f;
+
+#bsgLogo {
+	left: 932px;
+	top: 890px;
+	width: 80px;
+	height: 80px;
+}
+
+#comingUpRunContainer .runInformationWrapper {
+	left: 1023px;
+	top: 890px;
+}
+
+#comingUpGame {
+	font-size: 16px;
+	letter-spacing: 0px;
+}
+
+#comingUpCathegory {
+	font-size: 14px;
+	float: left;
+}
+
+#comingUpSystem {
+	font-size: 16px;
+	float: right;
+	padding-right: 10px;
+	color: #bfbfbf;
+}
+
+.runnerInfo {
+	font-size: 16px;
+	line-height: 43px;
+	box-sizing: border-box;
+}
+
+#justMissedPlayerContainer {
+	width: 700px;
+	height: 43px;
+	left: 222px;
+	top: 982px;
+}
+
+#justMissedPlayerContainer .runnerInfo {
+	padding-right: 10px;
+	text-align: right;
+}
+
+#comingUpPlayerContainer {
+	width: 773px;
+	height: 43px;
+	left: 949px;
+	top: 982px;
+}
+
+.runnerLogo {
+	width: 42px;
+	margin-right: 32px;
+}
+
+#comingUpPlayerContainer .runnerInfo {
+	padding-left: 10px;
+}
+
+#informationMarquee {
+	position: fixed;
+	top: 1080px;
+	left: 0px;
+	height: 59px;
+	opacity: 0;
+	width: 1920px;
+	overflow: hidden;
+	white-space: nowrap;
+	background-color: rgba(69,69,69,0.7);
+	font-size: 26px;
+	line-height: 59px;
+	text-align: center;
 }

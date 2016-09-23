@@ -1,11 +1,5 @@
 'use strict';
 $(function () {
-
-    // The name of the speedcontrol bundle that's used whenever a replicant or
-    // message needs to be used
-
-    var speedcontrolBundle = 'nodecg-speedcontrol';
-
     var isEditModeEnabled = false;
     var $generateCSSContentButton = $('#generateCSSContentButton');
     var $resetCSSContentButton = $('#resetCSSContentButton');
@@ -25,7 +19,7 @@ $(function () {
     $('body').css('font-size',scaleRatio*font + 'px');
 
     // Replicants ###
-    var sceneLayoutConfigurationReplicant = nodecg.Replicant('sceneLayoutConfiguration', speedcontrolBundle);
+    var sceneLayoutConfigurationReplicant = nodecg.Replicant('sceneLayoutConfiguration');
     sceneLayoutConfigurationReplicant.on('change', function(oldValue, newValue) {
         if(typeof newValue !== 'undefined' && newValue != '') {
             applyBackgroundTransparence(newValue.backgroundTransparency);
@@ -212,13 +206,13 @@ $(function () {
         // Below call will send a message to the csscreater.js extension
         // Which will create a custom css for the document importing this js in
         // css/editcss which is automatically imported when html file starts up
-        nodecg.sendMessageToBundle("createCustomCss",speedcontrolBundle, cssGenerationObject);
+        nodecg.sendMessage("createCustomCss",cssGenerationObject);
     });
 
     $resetCSSContentButton.click(function(){
         var cssResetObject = {};
         cssResetObject.sceneID = sceneID;
-        nodecg.sendMessageToBundle("deleteCustomCss",speedcontrolBundle, cssResetObject);
+        nodecg.sendMessage("deleteCustomCss",cssResetObject);
         location.reload();
     });
 
