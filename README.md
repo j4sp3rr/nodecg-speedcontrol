@@ -44,7 +44,7 @@ for the tech-savy, know that ’nodecg setup’ runs ’git clone’ under the h
 To install speedcontrol, do the following:
 In the prompt, type 
 ```
-‘nodecg install charleon/nodecg-speedcontrol’
+‘nodecg install j4sp3rr/nodecg-speedcontrol’
 ```
 
 Whenever you want to start NodeCG open the git bash prompt in the nodecg folder and type `nodecg start` (or `node index.js`). You can minimize the prompt if you'd like but it has to be running for NodeCG to work. If you get tired of doing this each time you want to start the server, you can make a shortcut to nodejs.exe in the nodejs installation folder and then in the properties of the shortcut, throw in the full path to nodecg/index.js. This will enable you to start the server with just a doubleclick!
