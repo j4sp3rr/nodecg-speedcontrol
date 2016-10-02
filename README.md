@@ -33,7 +33,7 @@ There are two prerequisites to get SpeedControl and NodeCG working.
 To install NodeCG: type, in this order: 
 ```
 ‘npm install nodecg-cli -g’
-’nodecg setup’
+’nodecg setup 0.7’
 ‘npm install’ 
 ‘npm install -g bower’
 ‘bower install’
