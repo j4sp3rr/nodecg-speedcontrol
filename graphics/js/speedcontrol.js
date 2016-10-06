@@ -103,7 +103,7 @@ $(function () {
         var twitchUrl = "";
         if (runnerDataArray[index].twitch != null &&
             runnerDataArray[index].twitch.uri != null) {
-            twitchUrl = 'twitch.tv/' + runnerDataArray[index].twitch.uri.replace("http://www.twitch.tv/","");
+            twitchUrl = runnerDataArray[index].twitch.uri.replace("http://www.twitch.tv/","");
         }
         else {
             twitchUrl = runnerDataArray[index].names.international;
